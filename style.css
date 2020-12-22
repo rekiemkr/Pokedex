@@ -1,0 +1,193 @@
+.testBox {
+    border: 1px solid black;
+}
+
+body {
+    height: 110vh;
+    font-family: 'Pokemon'
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    height: 10vh;
+    width: 95%;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #dedede;
+}
+
+.header__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding-left: 5%;
+    flex-direction: row;
+}
+
+.main {
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #4d4d4d;
+}
+
+.main__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 80%;
+}
+
+.main__name {
+    border-radius: 10px;
+    height: 20%;
+    width: 80%;
+    background-color: white;
+}
+
+.main__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+}
+
+.main__skills {
+    padding: 20px;
+    border-radius: 10px;
+    height: 75%;
+    width: 40%;
+    margin: 0 10%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__skills--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+}
+
+.main__image--img {
+    width: 60%;
+}
+
+.footer {
+    display: flex;
+    box-sizing: border-box;
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-direction: row;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__others {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.footer__others--items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #dedede;
+}
+.footer__others--items:hover {
+    background-color: #d1d1d1;
+}
+.footer__others--items img{
+    width: 80%;
+}
+
+@media(max-width: 900px) {
+    .header__container {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding-left: 0;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .main__header {
+        display: flex;
+        position: absolute;
+        height: 25%;
+        top: 16%;
+        justify-content: space-between
+    }
+    .main__name {
+        height: 35%;
+    }
+    .main__image {
+        height: 65%;
+    }
+    .main__skills {
+        /* position: absolute;   */
+        margin-top: 48%;
+        width: 70%;
+        margin-bottom: 5%;
+        height: 46%;
+    }
+    .main__skills--item {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        max-height: 150px;
+    }
+    .skill__left {
+        justify-content: flex-start;
+    }
+    .skill__right {
+        text-align: flex-end;
+    }
+    .footer{
+        height: 37vh;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 380px) {
+    .main__header {
+        display: flex;
+        position: absolute;
+        height: 25%;
+        top: 18%;
+        justify-content: space-between
+    }
+}
